@@ -15,7 +15,7 @@ Transcurre en las inmediaciones del edificio de la empresa, iniciando la aventur
 
 Para jugar al juego, descargar y descomprimir el archivo: 
 	
-	"COMPILADO.ZIP"
+	"COMPILADO.zip"
 
 Una vez descomprimido, ejecutar el archivo: 
 
