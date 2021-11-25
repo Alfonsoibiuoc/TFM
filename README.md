@@ -1,8 +1,9 @@
 # TFM - Diseño de experiencias de juego
 
+Máster en diseño y programación de videojuegos.
+
 Alfonso López Almendros.
 
-Unity Version 2020.3.6f1
 
 # Natxa - Su primer trabajo
 
@@ -10,6 +11,7 @@ La realización de este proyecto se ha llevado a cabo utilizando Unity como moto
 
 Transcurre en las inmediaciones del edificio de la empresa, iniciando la aventura desde el jardín. Cada nivel se diseña mezclando el mundo real, con el que Natxa imagina, incorporando de este modo diversos elementos extravagantes por todo el juego. El jugador avanzará por los diversos niveles haciendo uso de una potente habilidad, un rayo que le permite dormir os enemigos. Además, tendrá que obtener diferentes objetos con los que golpear cajas, abrir puertas, realizar intercambios, activar maquinarias, etc.
 
+Unity Version 2020.3.6f1
 
 # ¿Como probar el juego?
 
