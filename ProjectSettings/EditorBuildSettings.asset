@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 8c3068fac0399a54faf6ad6764036db6
+  - enabled: 1
+    path: Assets/Scenes/Introduccion.unity
+    guid: 8208d060696b0e349990ad0a8114f69a
+  - enabled: 1
+    path: Assets/Scenes/Jardin-01.unity
+    guid: f88a68a0b686e9a49b3b0e8ff92e0314
+  - enabled: 1
+    path: Assets/Scenes/Jardin-Carmelita.unity
+    guid: f36e1631d58bee5428a366eab327ea79
+  - enabled: 1
+    path: Assets/Scenes/Hall.unity
+    guid: 9c49e15d4b1ef6c418cc364869a08fa2
+  - enabled: 1
+    path: Assets/Scenes/Jardin-Cueva.unity
+    guid: ba78c403b60b6034cb72d3ec575f7ede
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a2cf80ab3ff48384cb7e942c7a45dcc5, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: b68906379f742ac4aa1d0e7fb8283628, type: 2}
