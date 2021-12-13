@@ -2157,6 +2157,7 @@ GameObject:
   - component: {fileID: -8164507368617853733}
   - component: {fileID: -345995861374686394}
   - component: {fileID: 5769649644572214970}
+  - component: {fileID: 6416830002886072111}
   m_Layer: 0
   m_Name: Pavo001
   m_TagString: EnemigoMovil
@@ -2406,6 +2407,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!208 &6416830002886072111
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120962244558753860}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 2, y: 1, z: 2}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6139498072553320271
 GameObject:
   m_ObjectHideFlags: 0

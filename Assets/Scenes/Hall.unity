@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1327224692}
-  m_PathPosition: 0.5045287
+  m_PathPosition: 3
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 7
@@ -6154,8 +6154,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575555780}
-  m_LocalRotation: {x: 0.08832166, y: -0.8835123, z: 0.18558095, w: 0.42090976}
-  m_LocalPosition: {x: 21.508305, y: 15.34888, z: -26.143791}
+  m_LocalRotation: {x: 0.05948954, y: -0.69955236, z: 0.058713757, w: 0.7096762}
+  m_LocalPosition: {x: -3.3516963, y: 12.029312, z: -20.922968}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6220,7 +6220,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: 8ec7b8dfe71d27d42ae836522286a553, type: 2}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
