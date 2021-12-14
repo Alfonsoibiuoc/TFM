@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class Inventario : MonoBehaviour
 {
-    Data data;
+    //Data data;
     public bool inventarioVisible;
     public GameObject inventario;
     public ControlNatxa controlNatxa;
     public ControladorEscena control;
     public AudioSource audioCanvas;
+    public PanelInformacion panelInfo;
+    public GameObject botonI;
 
     private int numSlots;
     private int slotsUsados;
@@ -21,7 +23,7 @@ public class Inventario : MonoBehaviour
 
     private void Awake()
     {
-        data = GameObject.Find("DATA").GetComponent<Data>();
+        //data = GameObject.Find("DATA").GetComponent<Data>();
         //slots = data.DatosRanuras[data.ranuraActual].Slots;  
     }
 
@@ -29,6 +31,8 @@ public class Inventario : MonoBehaviour
     {
         
         control = GameObject.Find("ControladorEscena").GetComponent<ControladorEscena>();
+        panelInfo = GameObject.Find("ControladorEscena").GetComponent<PanelInformacion>();
+
         inventarioVisible = false;
 
         //Obtenemos el número de slots que tiene el inventario (En este caso son 8)
@@ -79,11 +83,16 @@ public class Inventario : MonoBehaviour
         {
             inventario.SetActive(true);
             control.pausa = true;
+            botonI.SetActive(false);
         }
         else
         {
             inventario.SetActive(false);
-            control.pausa = false;      
+            if (!panelInfo.infoVisible)
+            {
+                control.pausa = false;
+            }
+            botonI.SetActive(true);
         }
     }
 

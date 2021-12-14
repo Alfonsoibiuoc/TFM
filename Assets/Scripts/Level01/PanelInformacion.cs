@@ -5,15 +5,19 @@ using UnityEngine;
 public class PanelInformacion : MonoBehaviour
 {
     public ControladorEscena control;
+    public Inventario controlInventario;
     public ControlNatxa controlNatxa;
     public AudioSource audioCanvas;
     public bool infoVisible;
     public GameObject panelInfo;
+    public GameObject panelInventario;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         control = GameObject.Find("ControladorEscena").GetComponent<ControladorEscena>();
+        controlInventario = GameObject.Find("ControladorEscena").GetComponent<Inventario>();
         infoVisible = false;
     }
 
@@ -24,7 +28,7 @@ public class PanelInformacion : MonoBehaviour
         {
             controlNatxa = GameObject.FindGameObjectWithTag("Player").GetComponent<ControlNatxa>();
         }
-        if (Input.GetKeyDown(KeyCode.I) && control.playerActivo)
+        if (Input.GetKeyDown(KeyCode.I) && control.playerActivo && !controlInventario.inventarioVisible)
         {
             audioCanvas.Play();
             if (controlNatxa.golpeando == false)
@@ -37,11 +41,17 @@ public class PanelInformacion : MonoBehaviour
         {
             panelInfo.SetActive(true);
             control.pausa = true;
+            
         }
         else
         {
             panelInfo.SetActive(false);
-            control.pausa = false;
+            if (!controlInventario.inventarioVisible)
+            {
+                control.pausa = false;
+            }
+            
+
         }
     }
 }
