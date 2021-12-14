@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Puerta : MonoBehaviour
 {
     ControlHall control;
     Data data;
     public int numMundo;
+    public Button buton;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +27,13 @@ public class Puerta : MonoBehaviour
                 control.TextoAcceder.SetActive(true);
                 control.PanelPuerta.SetActive(true);
                 control.numMundo = numMundo;
+                buton.interactable = true;
             }
             else
             {
                 control.TextoAccesoDenegado.SetActive(true);
                 control.PanelPuerta.SetActive(true);
+                buton.interactable = false;
             }
         }
         
